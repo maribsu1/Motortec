@@ -1,0 +1,1031 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+
+.home-page {
+    background: url('./Diseño sin título (4).png') center/cover #333;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.home-page header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2em;
+    text-align: left;
+    width: 100%;
+    position: relative;
+}
+
+.home-page header h1 {
+  margin: 0; /* Quita márgenes individuales y utiliza uno general */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 4em;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.726); /* Sombra del texto más oscura */
+}
+
+
+.home-page header h2 {
+    margin: 0;
+    margin-top: 0px;
+    margin-left: 0pxs;
+    color: #fff;
+    font-size: 1.5em; /* Ajusta el tamaño según tus preferencias */
+    text-shadow: 1px 2px 2px rgb(0, 0, 0); /* Sombra del texto más oscura */
+
+}
+
+.home-page header p {
+    font-size: 1.25rem;
+    margin: 0;
+    margin-top: 1.6rem;
+    margin-left: 1.9rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra del texto más oscura */
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    height: 70px;
+    background-color: rgba(8, 8, 14, 0.849) !important ; /* Color de fondo de la barra de navegación */
+}
+
+.navbar-brand {
+    position: relative;
+}
+
+.navbar-brand img {
+    margin-left: -18px;
+    width: 145px;
+    height: 70px;
+    opacity: 0.8;
+}
+
+.navbar-brand::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1; /* Mover detrás del contenido de la marca */
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    color: #ffffff; /* Color blanco para los enlaces normales */
+}
+
+.navbar-nav .nav-link.special-link {
+    color: #ffd900;
+    font-weight: bold;
+    border-bottom: 2px solid #ffd900;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffe600;
+    border-bottom: 2px solid #ffe600;
+}
+
+
+
+
+.social-icons-container {
+    position: absolute;
+    top: 196px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.411);
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    text-align: center;
+
+}
+
+
+.contact-services .social-icon {
+    font-size: 20px; /* Tamaño de los iconos */
+    margin: 0 10px; /* Espaciado entre los iconos */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Hace que el contenedor sea visible */
+    }
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #ffd900;
+    transition: font-size 0.5s ease;
+}
+
+.social-icon:hover {
+    color: #ffe600;
+    font-size: 26px;
+}
+
+
+.btn-servicios {
+    font-weight: bold;
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 30px;
+    margin-right: 20px;
+    color: #000000 !important;
+    font-size: 0.9rem !important;
+}
+
+.btn-servicios:hover {
+    background-color: #eeff00;
+}
+
+/* Footer */
+.footer {
+    color: #fff;
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.8em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.068);
+    text-align: center;
+}
+
+.contact-page, .services-page {
+    background: url('./Diseño sin título (4).png') center/cover #333;
+    background-attachment: fixed;
+    overflow-y: auto; /* Permite el desplazamiento vertical en ambas páginas */
+    position: relative;
+    color: #fff;
+}
+
+
+.services-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./Diseño sin título (4).png') center/cover no-repeat;
+    background-color: rgb(0, 0, 0); /* Fondo negro con opacidad del 50% */
+    z-index: -1;
+    opacity: 0.7; /* Ajusta el valor de opacidad según sea necesario */
+}
+
+.container {
+    padding-top: 0px; /* Ajusta según sea necesario */
+    z-index: 2;
+}
+
+  .services-page header {
+    padding: 2em; /* Ajusta el relleno según sea necesario */
+  }
+  
+  .services-page h1 {
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 0;
+    font-size: 1.4rem; /* Tamaño del texto h1 */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra del texto más oscura */
+
+  }
+
+  .centered-text {
+    text-align: center;
+}
+
+.header-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff !important;
+    font-size: 1.2rem !important;
+    margin-top: 10px;
+    margin-left: -230px;
+    text-align: center;
+
+}
+.cd-words-wrapper b {
+    opacity: 0;
+    position: absolute;
+    display: inline-block;
+    margin-right: 10px;
+    transition: opacity 1.8s ease-in-out;
+}
+
+.cd-words-wrapper b:first-child {
+    opacity: 1;
+}
+
+  .services-page h2 {
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 1rem; /* Tamaño del texto h2 */
+    color: #ffd900;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.726); /* Sombra del texto más oscura */
+
+  }
+
+/* Estilos para la barra de búsqueda */
+.search-container {
+    max-width: 420px;
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffee00;
+    border-radius: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.616);
+}
+/* Ajusta el margen superior de las cards para reducir el espacio entre ellas y la barra de búsqueda */
+.col-md-3 {
+    margin-top: 0px; /* Ajusta según sea necesario */
+}
+
+
+.search-container input {
+    flex: 1; /* Expande el campo de entrada para llenar el espacio disponible */
+    margin-top: 0px;
+    padding: 6px;
+    border: 1px;
+    border-radius: 20px;
+    outline: none; /* Elimina el borde de enfoque al hacer clic */
+    background-color: rgba(0, 0, 0, 0.226);
+    color: rgb(255, 255, 255); /* Color del texto */
+}
+/* styles_cards.css */
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 90%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-color: #3d3d3d9c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.938);
+    background: rgba(0, 0, 0, 0.295);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.card-img-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    background: rgba(0, 0, 0, 0.329); /* Ajusta el valor alpha según la transparencia deseada */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+.btn {
+    color: #fff; /* Color del texto de los botones */
+    font-size: 0.6rem; /* Nuevo: Reducción del tamaño del texto */
+}
+
+/* Ajustes específicos para el botón de Descripción */
+.btn[data-toggle="modal"][data-target^="#descripcionModal"] {
+    margin-left: 5px; /* Nuevo: Margen entre los botones */
+}
+
+/* Estilos para el modal */
+.modal-content {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos para el botón de cerrar en el modal */
+.close {
+    color: #fff; /* Color del botón de cerrar */
+}
+
+.modal-body {
+    font-size: 14px; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.modal-title {
+    font-size: 18px; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+
+/* styles_cards.css */
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Agrega esta regla de estilo para cambiar el color de fondo de los botones */
+.options .btn {
+    background-color: #0c0c0ca9; /* Azul Bootstrap - puedes ajustar este color según tus necesidades */
+    border-color: #30303093;
+}
+
+/* Agrega esta regla para cambiar el color de fondo al hacer hover en los botones */
+.options .btn:hover {
+    background-color: #ffe600; /* Azul más oscuro para el hover - puedes ajustar según tus necesidades */
+}
+
+.btn-contacto {
+    order: 1; /* Mover el botón de contacto al lado izquierdo */
+}
+
+.btn-descripcion {
+    order: 2; /* Mover el botón de descripción al lado derecho */
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la sección de contacto */
+body.contact-page {
+    position: relative;
+}
+
+.contact-title {
+    font-size: 1.8rem;
+    text-align: left;
+    color: rgb(255, 238, 0);
+    margin-top: 50px;
+    margin-left: 80px;
+    font-weight: bold;
+}
+
+body.contact-page hr {
+    border-top: 1.5px solid #9c9c9c;
+    width: 55%;
+    margin: 10px auto;
+    margin-left: 6%;
+}
+
+.contact-description {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px auto;
+    margin-left: 6%;
+    max-width: 750px;
+    text-shadow: 0px 2px 4px rgb(0, 0, 0);
+}
+
+.contact-info {
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    margin: 20px auto;
+    margin-left: 6%;
+    max-width: 600px;
+    text-shadow: 4px 6px 6px rgba(0, 0, 0, 0.979);
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+/* Estilos para los botones al lado derecho del hr */
+body.contact-page .contact-buttons {
+    position: absolute;
+    top: 170px;
+    right: 6%;
+    display: flex;
+    flex-direction: column; /* Organiza los botones en columna vertical */
+}
+
+body.contact-page .contact-buttons button {
+    background-color: #ffd900;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 200px;
+    height: 38px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    border: none; /* Agrega esta línea para eliminar el borde */
+}
+
+body.contact-page .contact-buttons button:hover {
+    background-color: #eeff00; /* Cambia el color al hacer hover */
+}
+
+
+/* Estilos del mapa y la ubicación */
+.map-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.location-info,
+.map-container {
+    flex-basis: 100%; /* Ocupa todo el ancho en dispositivos pequeños */
+    margin-bottom: 20px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.map-container iframe {
+    width: 30%;
+    height: 250px;
+    position: absolute;
+    top: 300px;
+    right: 6%;
+    display: flex;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.616);
+
+}
+
+
+@keyframes animacionBoton {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.animar {
+    animation: animacionBoton 3s infinite;
+}
+
+
+
+/* Estilos específicos para la página de contacto */
+.contact-page .contact-services {
+    display: flex;
+    flex-direction: row; /* Asegura que la dirección sea horizontal */
+    align-items: center; /* Alinea verticalmente los íconos */
+    margin-top: 291px;
+    margin-right: 61%;
+    gap: 80px;
+}
+
+.contact-page .social-icon {
+    font-size: 1.5rem; /* Ajusta el tamaño de los íconos según sea necesario */
+    margin-right: 15px; /* Ajusta el espacio entre los íconos según sea necesario */
+    transition: color 0.3s ease; /* Agrega una transición suave para el color */
+}
+
+.contact-page .social-icon:hover {
+    color: yellow; /* Cambia el color al hacer hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Agrega esto en tu código CSS */
+.whatsapp-floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp-icon {
+    background-color: #0bb836; /* Color de fondo de WhatsApp */
+    color: #ffffff; /* Color del texto */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.whatsapp-icon:hover {
+    background-color: #128c31; /* Cambia el color al hacer hover */
+}
+
+
+
+
+.chat-container {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    height: 280px;
+    width: 260px;
+    background-color: #ffffff;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    background-color: #0bb836;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-messages {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    background-color: #0bb836;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 2%;
+}
+
+.assistant-message {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #000000b9;
+}
+
+
+
+
+/* Agrega esto en tu código CSS */
+@keyframes whatsappBounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-5px);
+    }
+    60% {
+        transform: translateY(-3px);
+    }
+}
+
+.whatsapp-icon {
+    animation: whatsappBounce 2s infinite;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 1.95rem;
+    font-size: 16px;
+    background-color: #00000077;
+    color: #fff;
+    border: none;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulseAnimation 2s infinite;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #ffe600;
+}
+
+.text-dark {
+    color: #000 !important; /* Color de texto oscuro */
+}
+
+/* Modal específico (descripcionModal13) */
+#descripcionModal13 {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente oscuro */
+}
+
+#descripcionModal13 .modal-content {
+    background-color: #fff; /* Fondo del contenido del modal */
+    color: #000; /* Texto oscuro en el modal */
+}
+
+#descripcionModal13 .modal-header {
+    background-color: #070707ee; /* Fondo del encabezado del modal */
+    color: #fff; /* Texto blanco en el encabezado del modal */
+}
+
+#descripcionModal13 .modal-body {
+    padding: 20px;
+}
+
+
+
+/* Añadir animación cuando no se usa */
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* Estilos para el modal de cotización */
+#descripcionModal13 .modal-content {
+    color: #000000;
+    font-size: 1rem;
+}
+
+
+#descripcionModal13 h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 6rem;
+
+}
+#descripcionModal13 .modal-header {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#descripcionModal13 .modal-body {
+    background-color: #ffffff;
+}
+
+#cotizacionForm button.btn-primary {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+}
+
+#cotizacionForm button.btn-primary:hover {
+    background-color: #333333;
+    border-color: #333333;
+    color: #ffffff;
+}
+
+#descripcionModal13 .modal-dialog {
+    max-width: 48%;
+}
+
+#cotizacionResult table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+#cotizacionResult th, #cotizacionResult td {
+    border: 1px solid #313131;
+    padding: 8px;
+    text-align: left;
+}
+
+#cotizacionResult th {
+    background-color: #000000;
+    color: white;
+}
+
+#cotizacionResult .total-general {
+    font-weight: bold;
+}
+
+#cotizacionResult {
+    color: #333333;
+    font-weight: normal;
+}
+
+
+table, th, td {
+    text-align: center !important;
+}
+
+
+
+
+
+
+
+
+
+/* Media Query para dispositivos más pequeños (móviles) */
+@media screen and (max-width: 767px) {
+    .contact-title {
+        font-size: 1.3rem; /* Ajusta el tamaño del título para dispositivos móviles */
+        margin-left: 8%;
+    }
+
+    .contact-description {
+        font-size: 1.1rem;
+        text-align: center; /* Centra el texto para dispositivos móviles */
+        margin: 20px;
+        margin-top: 40px;
+        max-width: 90%; /* Ajusta el ancho máximo para dispositivos móviles */
+    }
+
+    .contact-info {
+        font-size: 0.8rem;
+        text-align: center; /* Centra el texto para dispositivos móviles */
+        margin-top: 10px;
+        max-width: 90%; /* Ajusta el ancho máximo para dispositivos móviles */
+    }
+
+    body.contact-page .contact-buttons {
+        position: fixed;
+        top: 24%; /* Ajusta según sea necesario para centrar verticalmente */
+        right: 0;
+        transform: translateY(-40%);
+        transition: top 0.2s; /* Agrega una transición suave para el efecto */
+    }
+
+    body.contact-page .contact-buttons.hidden {
+        top: -100px; /* Oculta los botones al moverlos fuera de la pantalla */
+    }
+
+    body.contact-page .contact-buttons button {
+       margin-right: 8px;
+    }
+
+    body.contact-page .social-icons-container {
+        margin: 580px -10px; /* Ajusta los márgenes superior e inferior para dispositivos móviles */
+    }
+
+    body.contact-page .contact-services .social-icon {
+        font-size: 20px; /* Ajusta el tamaño de los íconos para dispositivos móviles */
+        margin: 0px 0px 0px; /* Ajusta el espaciado entre los íconos para dispositivos móviles */
+    }
+    
+
+    .map-section {
+        flex-direction: column; /* Cambia la dirección de la fila a columna en dispositivos móviles */
+    }
+
+    .map-container {
+        width: 80%; /* Ajusta el ancho del mapa */
+        margin: 10px auto; /* Centra el mapa */
+        text-align: center; /* Centra el contenido del mapa */
+    }
+
+    .map-container iframe {
+        width: 100%; /* Ocupa el ancho completo en dispositivos móviles */
+        height: 200px; /* Ajusta la altura según sea necesario */
+        position: static; /* Elimina la posición absoluta para dispositivos móviles */
+    }
+
+
+    body.contact-page .contact-buttons button {
+        background-color: #ffd900;
+        font-weight: bold;
+        margin-top: 8%;
+        width: 120px;
+        height: 46px;
+        border-radius: 30px;
+        font-size: 0.8rem;
+        border: none; /* Agrega esta línea para eliminar el borde */
+    }
+
+    .whatsapp-floating-button {
+        position: fixed;
+        bottom: 80px;
+        right: 6px;
+    }
+    
+    .whatsapp-icon {
+        background-color: #0bb836; /* Color de fondo de WhatsApp */
+        color: #ffffff; /* Color del texto */
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #descripcionModal13 .modal-dialog {
+        max-width: 100%;
+        margin: 0; /* Ajusta según sea necesario */
+    }
+
+    #descripcionModal13 h3 {
+        margin-left: 0; /* Ajusta según sea necesario */
+    }
+
+    #cotizacionResult table {
+        font-size: 0.8rem; /* Ajusta según sea necesario */
+    }
+
+    #cotizacionResult th, #cotizacionResult td {
+        padding: 6px; /* Ajusta según sea necesario */
+    }
+
+    .footer {
+        background-color: rgba(8, 8, 14, 0.849) !important; /* Color azul grisáceo, puedes ajustarlo según tus preferencias */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    } 
+    .navbar {
+        height: auto; /* Ajusta la altura automáticamente en dispositivos móviles */
+    }
+
+    .navbar-toggler {
+        background-color: #333; /* Ajusta el color del botón para que sea visible en fondos oscuros */
+    }
+
+    .navbar-nav,
+    .navbar-nav .nav-item {
+        width: 100%; /* Asegura que el menú desplegable ocupe el ancho completo */
+        text-align: center; /* Centra los elementos del menú */
+    }
+    
+    .home-page header {
+        padding: 0em;
+        text-align: center;
+        align-items: center;
+    }
+
+    .home-page header h1 {
+        font-size: 3em;
+        margin-top: -120px; /* Ajusta el margen-top según sea necesario */
+    }
+
+    .home-page header h2 {
+        font-size: 1.2em;
+    }
+
+    .home-page header p {
+        font-size: 0.9em;
+    }
+
+
+    
+    .card {
+        width: 80%; /* Ajusta el ancho para permitir dos tarjetas en la misma fila */
+        margin: auto; /* Agrega un pequeño margen entre las tarjetas */
+        height: 200px; /* Ajusta la altura de la tarjeta para dispositivos móviles */
+        margin-top: -20px;
+        margin-bottom: 26px; /* Agrega un margen inferior para separar las tarjetas del footer */
+    }
+
+    .card-title {
+        font-size: 0.8rem; /* Ajusta el tamaño del título de la tarjeta para dispositivos móviles */
+    }
+
+    .btn {
+        font-size: 0.7rem; /* Ajusta el tamaño del texto del botón para dispositivos móviles */
+    }
+
+    
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px !important;
+    right: 0.5rem;
+    bottom: 5rem;
+    
+}
+
+    header.centered-text .social-icons-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    header.centered-text .social-icon {
+      margin: 0 10px;
+    }
+  
+    main .search-container {
+      margin-top: 20px;
+    }
+  
+    main .card {
+      height: auto;
+    }
+  
+    footer.footer {
+      padding: 20px;
+    }
+  
+    .modal-content {
+        margin: 0 auto;
+        width: 90%; /* Puedes ajustar este valor según sea necesario */
+    }
+
+    /* Ajusta el ancho de la tabla en dispositivos móviles */
+    table {
+        width: 100%;
+    }
+
+    /* Centra el botón de Agendar en dispositivos móviles */
+    #btnAgendar {
+        display: block;
+        margin: 15px auto; /* Ajusta este valor según sea necesario */
+    }
+
+    /* Ajustes para mejorar la visualización en dispositivos móviles */
+    #cotizacionResult {
+        padding: 10px;
+    }
+}

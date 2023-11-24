@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js/dist/css/autoComplete.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-zzXsGHvQI69Mq0UH8SXz9rPpZl0jZX8zIz/J3UqBDZi2htS39is8eKBFdL/uEUu2" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Motortec - Servicios</title>
+</head>
+<body class="services-page">
+
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./img/logo1.png" width="115" height="80" class="d-inline-block align-top" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link normal-link" href="./index.html">Inicio</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link special-link" href="./services.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link normal-link" href="./contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link normal-link" href="./about.html">Nosotros</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+ 
+    <header class="centered-text">
+        <h1>Comprometidos con la excelencia técnica, tu taller de confianza.
+        </h1>
+        <h2>Garantía en todas las reparaciones </h2> 
+        <br>
+    <h2 class="header-title mt-10">
+        <div class="typing_section" id="typingSection">
+            <div class="cd-headline clip typing_data">
+                <div class="cd-words-wrapper">
+                    <b>Correas de repartición</b>
+                    <b>Sincronización</b>
+                    <b>Amortiguadores</b>
+                    <b>Pastillas</b>
+                    <b>Embragues</b>
+                </div>
+            </div>
+        </div>
+    </h2>
+    <br>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Buscar servicio...">
+        <div class="autocomplete"></div>
+    </div>
+</header>
+
+
+
+
+<main>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-warning">
+                    <img src="./img/c1 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h6 class="card-title">Cambio de aceite vehículo a gasolina.</h6>
+                        <div class="options">
+                            <button class="btn btn-warning ml-2 btn-descripcion" data-toggle="modal" data-target="#descripcionModal13">Cotizar</button>
+                            <button class="btn btn-warning ml-2 btn-descripcion" data-toggle="modal" data-target="#descripcionModal1">Mas Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 2 -->
+             <div class="col-md-3 mb-4">
+                <div class="card border-warning">
+                    <img src="./img/c1 (2).png" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h6 class="card-title">Cambio de aceite vehículo diesel.</h6>
+                        <div class="options">
+                            <a href="https://Wa.me/+573132856168" target="_blank" class="btn btn-warning btn-contacto">Cotizar</a>
+                            <button class="btn btn-warning ml-2 btn-descripcion" data-toggle="modal" data-target="#descripcionModal2">Mas Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-warning">
+                    <img src="./img/c1 (3).png" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h6 class="card-title">Sincronización vehículo gasolina.</h6>
+                        <div class="options">
+                            <a href="https://Wa.me/+573132856168" target="_blank" class="btn btn-warning btn-contacto">Cotizar</a>
+                            <button class="btn btn-warning ml-2 btn-descripcion" data-toggle="modal" data-target="#descripcionModal3">Mas Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-warning">
+                    <img src="./img/c1 (4).png" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h6 class="card-title">Diagnóstico fallos de motor.</h6>
+                        <div class="options">
+                            <a href="https://Wa.me/+573132856168" target="_blank"  class="btn btn-warning btn-contacto">Cotizar</a>
+                            <button class="btn btn-warning ml-2 btn-descripcion" data-toggle="modal" data-target="#descripcionModal4">Mas Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-warning">
+                    <img src="./img/c1 (5).png" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h6 class="card-title">Diagnóstico ruido suspensión.</h6>
+                        <div class="options">
+                            <a href="https://Wa.me/+573132856168" target="_blank"  class="btn btn-warning btn-contacto">Cotizar</a>
+                            <button class="btn btn-warning ml-2 btn-descripcion" data-toggle="modal" data-target="#descripcionModal5">Mas Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-warning">
+                    <img src="./img/c1 (6).png" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h6 class="card-title">Revisión de frenos automóviles.</h6>
+                        <div class="options">
+                            <a href="https://Wa.me/+573132856168" target="_blank"  class="btn btn-warning btn-contacto">Cotizar</a>
+                            <button class="btn btn-warning ml-2 btn-descripcion" data-toggle="modal" data-target="#descripcionModal6">Mas Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-warning">
+                    <img src="./img/c1 (7).png" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h6 class="card-title">Revisión de frenos camionetas y/o furgones.</h6>
+                        <div class="options">
+                            <a href="https://Wa.me/+573132856168" target="_blank"  class="btn btn-warning btn-contacto">Cotizar</a>
+                            <button class="btn btn-warning ml-2 btn-descripcion" data-toggle="modal" data-target="#descripcionModal7">Mas Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-warning">
+                    <img src="./img/c1 (8).png" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h6 class="card-title">Cambio de bandas automóviles, camionetas y furgones.</h6>
+                        <div class="options">
+                            <a href="https://Wa.me/+573132856168" target="_blank"  class="btn btn-warning btn-contacto">Cotizar</a>
+                            <button class="btn btn-warning ml-2 btn-descripcion" data-toggle="modal" data-target="#descripcionModal8">Mas Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 9 -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-warning">
+                    <img src="./img/c1 (9).png" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h6 class="card-title">Cambio de pastillas.</h6>
+                        <div class="options">
+                            <a href="https://Wa.me/+573132856168" target="_blank"  class="btn btn-warning btn-contacto">Cotizar</a>
+                            <button class="btn btn-warning ml-2 btn-descripcion" data-toggle="modal" data-target="#descripcionModal9">Mas Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 10 -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-warning">
+                    <img src="./img/c1 (10).png" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h6 class="card-title">Cambio de amortiguadores.</h6>
+                        <div class="options">
+                            <a href="https://Wa.me/+573132856168" target="_blank"  class="btn btn-warning btn-contacto">Cotizar</a>
+                            <button class="btn btn-warning ml-2 btn-descripcion" data-toggle="modal" data-target="#descripcionModal10">Mas Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 11 -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-warning">
+                    <img src="./img/c1 (11).png" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h6 class="card-title">Revisión preventiva 12 puntos.</h6>
+                        <div class="options">
+                            <a href="https://Wa.me/+573132856168" target="_blank"  class="btn btn-warning btn-contacto">Cotizar</a>
+                            <button class="btn btn-warning ml-2 btn-descripcion" data-toggle="modal" data-target="#descripcionModal11">Mas Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 12 -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-warning">
+                    <img src="./img/c1 (12).png" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h6 class="card-title">Cambio kit embrague automóviles.</h6>
+                        <div class="options">
+                            <a href="https://Wa.me/+573132856168" target="_blank"  class="btn btn-warning btn-contacto">Cotizar</a>
+                            <button class="btn btn-warning ml-2 btn-descripcion" data-toggle="modal" data-target="#descripcionModal1">Mas Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+            <!-- Puedes agregar más cards aquí -->
+    
+        </div>
+    </div>
+    
+<!-- Modal para la descripción (puedes repetir este bloque para cada card) -->
+<!-- Modal para la descripción del servicio de Cambio de aceite vehículo a gasolina -->
+<div class="modal fade" id="descripcionModal1" tabindex="-1" role="dialog" aria-labelledby="descripcionModalLabel1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel1">Cambio de aceite vehículo a gasolina</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido de la descripción -->
+                <p>Mantén tu motor en óptimas condiciones con nuestro servicio de cambio de aceite. Utilizamos productos de alta calidad para asegurar el rendimiento de tu vehículo.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para la descripción del servicio de Cambio de aceite vehículo diesel -->
+<div class="modal fade" id="descripcionModal2" tabindex="-1" role="dialog" aria-labelledby="descripcionModalLabel2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel2">Cambio de aceite vehículo diesel</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido de la descripción -->
+                <p>Garantiza un rendimiento óptimo de tu motor con nuestro servicio de cambio de aceite para vehículos diesel. Utilizamos productos de alta calidad y técnicos especializados.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para la descripción del servicio de Sincronización vehículo gasolina -->
+<div class="modal fade" id="descripcionModal3" tabindex="-1" role="dialog" aria-labelledby="descripcionModalLabel3" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel3">Sincronización vehículo gasolina</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido de la descripción -->
+                <p>Optimiza el rendimiento de tu vehículo con nuestro servicio de sincronización. Nuestros técnicos expertos garantizan un trabajo preciso y de alta calidad.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para la descripción del servicio de Diagnóstico fallos de motor -->
+<div class="modal fade" id="descripcionModal4" tabindex="-1" role="dialog" aria-labelledby="descripcionModalLabel4" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel4">Diagnóstico fallos de motor</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido de la descripción -->
+                <p>Utilizamos tecnología avanzada para determinar con precisión cualquier problema y ofrecer soluciones efectivas. Confía en nuestro servicio de diagnóstico de motor.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para la descripción del servicio de Diagnóstico ruido suspensión -->
+<div class="modal fade" id="descripcionModal5" tabindex="-1" role="dialog" aria-labelledby="descripcionModalLabel5" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel5">Diagnóstico ruido suspensión</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido de la descripción -->
+                <p>Nuestros expertos analizan cada componente para determinar la causa del ruido y proporcionar soluciones efectivas. Mantén tu conducción suave y segura con nuestro servicio de diagnóstico de suspensión.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para la descripción del servicio de Revisión de frenos automóviles -->
+<div class="modal fade" id="descripcionModal6" tabindex="-1" role="dialog" aria-labelledby="descripcionModalLabel6" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel6">Revisión de frenos automóviles</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido de la descripción -->
+                <p>Nuestros técnicos altamente calificados garantizan que cada componente funcione correctamente para proporcionar un rendimiento de frenado óptimo. Confía en nosotros para mantener la seguridad de tu vehículo.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para la descripción del servicio de Revisión de frenos camionetas y/o furgones -->
+<div class="modal fade" id="descripcionModal7" tabindex="-1" role="dialog" aria-labelledby="descripcionModalLabel7" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel7">Revisión de frenos camionetas y/o furgones</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido de la descripción -->
+                <p>Nuestros técnicos especializados garantizan que cada componente funcione correctamente para proporcionar un rendimiento de frenado óptimo. Confía en nosotros para mantener la seguridad de tu vehículo de carga.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para la descripción del servicio de Cambio de bandas automóviles, camionetas y furgones -->
+<div class="modal fade" id="descripcionModal8" tabindex="-1" role="dialog" aria-labelledby="descripcionModalLabel8" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel8">Cambio de bandas automóviles, camionetas y furgones</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido de la descripción -->
+                <p>Mantén tu vehículo en excelente estado con nuestro servicio de cambio de bandas. Utilizamos productos de calidad para asegurar un rendimiento óptimo de tu sistema de transmisión.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para la descripción del servicio de Cambio de pastillas -->
+<div class="modal fade" id="descripcionModal9" tabindex="-1" role="dialog" aria-labelledby="descripcionModalLabel9" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel9">Cambio de pastillas</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido de la descripción -->
+                <p>Utilizamos pastillas de calidad para garantizar una frenada segura y eficiente. Confía en nuestro servicio para tu seguridad en la carretera.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para la descripción del servicio de Cambio de amortiguadores -->
+<div class="modal fade" id="descripcionModal10" tabindex="-1" role="dialog" aria-labelledby="descripcionModalLabel10" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel10">Cambio de amortiguadores</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido de la descripción -->
+                <p>Utilizamos amortiguadores de calidad para garantizar un viaje suave y seguro. Confía en nuestro servicio para el mantenimiento de tu sistema de suspensión.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para la descripción del servicio de Revisión preventiva 12 puntos -->
+<div class="modal fade" id="descripcionModal11" tabindex="-1" role="dialog" aria-labelledby="descripcionModalLabel11" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel11">Revisión preventiva 12 puntos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido de la descripción -->
+                <p>Nuestros técnicos expertos identificarán cualquier posible fallo y te ofrecerán soluciones preventivas. Confía en nuestro servicio para mantener tu vehículo en excelente estado.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para la descripción del servicio de Cambio kit embrague automóviles -->
+<div class="modal fade" id="descripcionModal12" tabindex="-1" role="dialog" aria-labelledby="descripcionModalLabel12" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel12">Cambio kit embrague automóviles</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido de la descripción -->
+                <p>Garantiza un funcionamiento suave y eficiente de tu sistema de embrague con nuestro servicio especializado. Utilizamos componentes de calidad para asegurar un rendimiento óptimo de tu vehículo.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                <!-- MODAL COTIZACION-->
+
+<div class="modal fade" id="descripcionModal13" tabindex="-1" role="dialog" aria-labelledby="descripcionModalLabel13" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-dark">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel7">Cotización</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="cotizacionResult" class="mt-3"></div>
+            <div class="modal-body">
+                <!-- Contenido del formulario -->
+                <form id="cotizacionForm">
+                    <!-- Marca -->
+                    <div class="form-group">
+                        <label for="marcaSelect">Marca:</label>
+                        <select class="form-control" id="marcaSelect" name="marca">
+                            <option value="FORD">FORD</option>
+                            <option value="RENAULT">RENAULT</option>
+                            <!-- Agrega más marcas según sea necesario -->
+                        </select>
+                    </div>
+
+                    <!-- Modelo -->
+                    <div class="form-group">
+                        <label for="modeloSelect">Modelo:</label>
+                        <select class="form-control" id="modeloSelect" name="modelo">
+                            <!-- Opciones de modelo se llenarán dinámicamente según la selección de marca -->
+                        </select>
+                    </div>
+
+                    <!-- Año -->
+                    <div class="form-group">
+                        <label for="anioSelect">Año:</label>
+                        <select class="form-control" id="anioSelect" name="anio">
+                            <!-- Opciones de año se llenarán dinámicamente según la selección de modelo -->
+                        </select>
+                    </div>
+
+                    <!-- Cilindraje -->
+                    <div class="form-group">
+                        <label for="cilindrajeSelect">Cilindraje:</label>
+                        <select class="form-control" id="cilindrajeSelect" name="cilindraje">
+                            <!-- Opciones de cilindraje se llenarán dinámicamente según la selección de modelo -->
+                        </select>
+                    </div>
+
+                    <!-- Botón de enviar -->
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    </main>
+
+   
+   
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Motortec. Todos los derechos reservados.</p>
+                </div>
+    </footer>
+
+<!-- Botón de Volver arriba con ícono -->
+<button id="scrollToTopBtn" title="Volver arriba"><i class="fa-solid fa-angles-up"></i></button>
+
+
+
+<!-- Agrega esto en tu código HTML -->
+<div class="whatsapp-floating-button" id="whatsappBtn">
+    <a href="javascript:void(0)" onclick="toggleChat()">
+        <div class="whatsapp-icon"><i class="fab fa-whatsapp"></i></div>
+    </a>
+</div>
+
+<div class="chat-container" id="chatContainer">
+    <div class="chat-header">
+        <span>Chat Whatsapp</span>
+        <a href="javascript:void(0)" onclick="toggleChat()">
+            <i class="fas fa-times" style="color: black;"></i>
+        </a>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+        <div class="assistant-message">¿Preguntas? Nosotros tenemos respuestas. ¡Estamos emocionados de ayudarte!</div>
+    </div>
+    <div class="chat-input">
+        <button onclick="redirectToWhatsApp()">Contáctanos</button>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js"></script>
+    <script src="./script.js"></script>
+    
+
+
+
+</body>
+</html>
