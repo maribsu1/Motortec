@@ -21,12 +21,12 @@
 }
 
 .home-page header h1 {
-  margin: 0; /* Quita márgenes individuales y utiliza uno general */
+  margin: 0; 
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #fff;
   font-size: 4em;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.726); /* Sombra del texto más oscura */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.726); 
 }
 
 
@@ -35,8 +35,8 @@
     margin-top: 0px;
     margin-left: 0pxs;
     color: #fff;
-    font-size: 1.5em; /* Ajusta el tamaño según tus preferencias */
-    text-shadow: 1px 2px 2px rgb(0, 0, 0); /* Sombra del texto más oscura */
+    font-size: 1.5em;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0); 
 
 }
 
@@ -47,7 +47,7 @@
     margin-left: 1.9rem;
     font-family: 'Ubuntu', sans-serif;
     color: #fff;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra del texto más oscura */
+    text-shadow: 4px 4px 4px rgb(0, 0, 0); 
 }
 
 body {
@@ -58,6 +58,8 @@ body {
     background-color: #333;
     background-size: cover;
     background-position: center;
+    margin-bottom: 56px; 
+
 }
 
 .navbar {
@@ -110,11 +112,11 @@ body {
 
 .social-icons-container {
     position: absolute;
-    top: 196px;
-    right: 30px;
+    top: 146px;
+    right: 8px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     background-color: rgba(0, 0, 0, 0.411);
     padding: 10px;
     border-radius: 10px;
@@ -126,7 +128,6 @@ body {
 
 
 .contact-services .social-icon {
-    font-size: 20px; /* Tamaño de los iconos */
     margin: 0 10px; /* Espaciado entre los iconos */
 }
 
@@ -162,22 +163,72 @@ body {
     background-color: #eeff00;
 }
 
-/* Footer */
+/* Estilo inicial del footer */
 .footer {
-    color: #fff;
-    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.712);
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
+    height: 12%;
+    padding: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 1;
 }
 
 .footer p {
     margin: 0;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.068);
     text-align: center;
 }
+
+
+/* Estilos específicos para el footer en la página contact */
+.contact-page {
+    position: relative;
+}
+
+.contact-page .footer {
+    background-color: rgba(0, 0, 0, 0.712);
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+
+
+
+/* Botón de Volver arriba */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+/* Botón de WhatsApp flotante */
+.whatsapp-floating-button {
+    position: fixed;
+    bottom: 80px; /* Ajusta la posición según sea necesario */
+    right: 20px;
+    z-index: 2;
+}
+
 
 .contact-page, .services-page {
     background: url('./Diseño sin título (4).png') center/cover #333;
@@ -259,9 +310,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #ffee00;
+    border: 1px solid #ffe600;
     border-radius: 20px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.616);
+    box-shadow: 0 2px 2px rgba(247, 202, 0, 0.616);
 }
 /* Ajusta el margen superior de las cards para reducir el espacio entre ellas y la barra de búsqueda */
 .col-md-3 {
@@ -279,6 +330,19 @@ body {
     background-color: rgba(0, 0, 0, 0.226);
     color: rgb(255, 255, 255); /* Color del texto */
 }
+
+
+#searchInput::placeholder {
+    color: rgb(197, 197, 197);
+}
+
+#searchInput {
+    color: white;
+}
+
+
+
+
 /* styles_cards.css */
 
 .card {
@@ -396,6 +460,8 @@ body {
 /* Estilos para la sección de contacto */
 body.contact-page {
     position: relative;
+    overflow: hidden;
+
 }
 
 .contact-title {
@@ -421,17 +487,17 @@ body.contact-page hr {
     margin: 20px auto;
     margin-left: 6%;
     max-width: 750px;
-    text-shadow: 0px 2px 4px rgb(0, 0, 0);
+    text-shadow: 2px 4px 4px rgb(0, 0, 0);
 }
 
 .contact-info {
-    color: #fff;
-    text-align: left;
-    font-size: 16px;
+    color: #ffffff;
+    text-align: left !important;
+    font-size: 1rem;
     margin: 20px auto;
     margin-left: 6%;
     max-width: 600px;
-    text-shadow: 4px 6px 6px rgba(0, 0, 0, 0.979);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.979);
 }
 
 .contact-info p {
@@ -441,7 +507,7 @@ body.contact-page hr {
 /* Estilos para los botones al lado derecho del hr */
 body.contact-page .contact-buttons {
     position: absolute;
-    top: 170px;
+    top: 100px;
     right: 6%;
     display: flex;
     flex-direction: column; /* Organiza los botones en columna vertical */
@@ -468,14 +534,11 @@ body.contact-page .contact-buttons button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 
 .location-info,
 .map-container {
-    flex-basis: 100%; /* Ocupa todo el ancho en dispositivos pequeños */
-    margin-bottom: 20px;
-    
+    flex-basis: 100%; /* Ocupa todo el ancho en dispositivos pequeños */   
 
 }
 
@@ -508,7 +571,7 @@ body.contact-page .contact-buttons button:hover {
     width: 30%;
     height: 250px;
     position: absolute;
-    top: 300px;
+    top: 240px;
     right: 6%;
     display: flex;
     border-radius: 2%;
@@ -573,7 +636,7 @@ body.contact-page .contact-buttons button:hover {
 }
 
 .whatsapp-icon {
-    background-color: #0bb836; /* Color de fondo de WhatsApp */
+    background-color: #08b132; /* Color de fondo de WhatsApp */
     color: #ffffff; /* Color del texto */
     width: 60px;
     height: 60px;
@@ -583,7 +646,7 @@ body.contact-page .contact-buttons button:hover {
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     text-align: center;
 }
 
@@ -802,11 +865,16 @@ table, th, td {
 
 
 
-
-
+@media screen and (max-width: 767px) {
+    .contact-page .footer {
+        margin-top: 20px; /* Ajusta según sea necesario */
+    }
+}
 
 /* Media Query para dispositivos más pequeños (móviles) */
 @media screen and (max-width: 767px) {
+
+
     .contact-title {
         font-size: 1.3rem; /* Ajusta el tamaño del título para dispositivos móviles */
         margin-left: 8%;
@@ -844,7 +912,7 @@ table, th, td {
     }
 
     body.contact-page .social-icons-container {
-        margin: 580px -10px; /* Ajusta los márgenes superior e inferior para dispositivos móviles */
+        margin: 440px 80px; /* Ajusta los márgenes superior e inferior para dispositivos móviles */
     }
 
     body.contact-page .contact-services .social-icon {
@@ -865,7 +933,7 @@ table, th, td {
 
     .map-container iframe {
         width: 100%; /* Ocupa el ancho completo en dispositivos móviles */
-        height: 200px; /* Ajusta la altura según sea necesario */
+        height: 100px; /* Ajusta la altura según sea necesario */
         position: static; /* Elimina la posición absoluta para dispositivos móviles */
     }
 
@@ -919,13 +987,6 @@ table, th, td {
         padding: 6px; /* Ajusta según sea necesario */
     }
 
-    .footer {
-        background-color: rgba(8, 8, 14, 0.849) !important; /* Color azul grisáceo, puedes ajustarlo según tus preferencias */
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    } 
     .navbar {
         height: auto; /* Ajusta la altura automáticamente en dispositivos móviles */
     }
@@ -948,7 +1009,6 @@ table, th, td {
 
     .home-page header h1 {
         font-size: 3em;
-        margin-top: -120px; /* Ajusta el margen-top según sea necesario */
     }
 
     .home-page header h2 {
@@ -995,6 +1055,10 @@ table, th, td {
     header.centered-text .social-icon {
       margin: 0 10px;
     }
+
+    main {
+        padding-bottom: 60px; /* Ajusta según la altura de tu footer */
+    }
   
     main .search-container {
       margin-top: 20px;
@@ -1004,10 +1068,7 @@ table, th, td {
       height: auto;
     }
   
-    footer.footer {
-      padding: 20px;
-    }
-  
+ 
     .modal-content {
         margin: 0 auto;
         width: 90%; /* Puedes ajustar este valor según sea necesario */
@@ -1028,4 +1089,8 @@ table, th, td {
     #cotizacionResult {
         padding: 10px;
     }
+
+
+    
+
 }

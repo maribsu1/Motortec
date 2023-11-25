@@ -583,3 +583,28 @@ window.addEventListener("scroll", function () {
     lastScrollTop = st <= 0 ? 0 : st; // For mobile or negative scrolling
 });
 
+
+
+// Este script mostrará el footer cuando el usuario llegue al final de la página
+
+document.addEventListener("DOMContentLoaded", function () {
+    var footer = document.querySelector(".footer");
+
+    function showFooter() {
+        var scrollPosition = window.scrollY + window.innerHeight;
+        var pageHeight = document.body.offsetHeight;
+
+        if (scrollPosition >= pageHeight) {
+            footer.style.opacity = "1";
+            footer.style.visibility = "visible";
+        } else {
+            footer.style.opacity = "0";
+            footer.style.visibility = "hidden";
+        }
+    }
+
+    window.addEventListener("scroll", showFooter);
+});
+
+
+
