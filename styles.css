@@ -1,57 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Cardo:wght@700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
 
-.home-page {
-    background: url('./Diseño sin título (4).png') center/cover #333;
-    background-attachment: fixed;
-    overflow: hidden;
-}
-
-.home-page header {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 2em;
-    text-align: left;
-    width: 100%;
-    position: relative;
-}
-
-.home-page header h1 {
-  margin: 0; 
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  color: #fff;
-  font-size: 4em;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.726); 
-}
-
-
-.home-page header h2 {
-    margin: 0;
-    margin-top: 0px;
-    margin-left: 0pxs;
-    color: #fff;
-    font-size: 1.5em;
-    text-shadow: 4px 4px 4px rgb(0, 0, 0); 
-
-}
-
-.home-page header p {
-    font-size: 1.25rem;
-    margin: 0;
-    margin-top: 1.6rem;
-    margin-left: 1.9rem;
-    font-family: 'Ubuntu', sans-serif;
-    color: #fff;
-    text-shadow: 4px 4px 4px rgb(0, 0, 0); 
-}
-
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Alata', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -105,6 +57,160 @@ body {
 .navbar-nav .nav-link:hover {
     color: #ffe600;
     border-bottom: 2px solid #ffe600;
+}
+
+.home-page,
+.about-page,
+.contact-page {
+    /* Background y estilos comunes */
+    background: url('./Diseño sin título (4).png') center/cover #333;
+    position: relative;
+    color: #fff;
+    overflow-y: auto;
+}
+.contact-page, .services-page {
+    position: relative;
+    color: #fff;
+}
+.home-page header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2em;
+    text-align: left;
+    width: 100%;
+    position: relative;
+}
+
+.home-page header h1 {
+  margin: 0; 
+  font-family: 'Cardo', serif;
+  color: #fff;
+  font-size: 4em;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.726); 
+}
+
+
+.home-page header h2 {
+    margin: 0;
+    margin-top: 0px;
+    margin-left: 0pxs;
+    color: #fff;
+    font-size: 1.5em;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0); 
+
+}
+
+.home-page header p {
+    font-size: 1.25rem;
+    margin: 0;
+    margin-top: 20px;
+    color: #fff;
+    text-shadow: 2px 2px rgb(0, 0, 0); 
+}
+
+
+.services-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./Diseño sin título (4).png') center/cover no-repeat;
+    background-color: rgb(0, 0, 0); /* Fondo negro con opacidad del 50% */
+    z-index: -1;
+    opacity: 0.7; /* Ajusta el valor de opacidad según sea necesario */
+}
+
+
+
+
+
+
+
+
+
+
+
+.about-page header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2em;
+    text-align: left;
+    width: 100%;
+    position: relative;
+}
+.about-page header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .about-page header h2,
+  .about-page header p {
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.726);
+  }
+  
+  .about-page header h1 {
+    font-size: 2rem;
+    margin-bottom: 0px;
+  }
+  .about-page header h2 {
+    font-size: 1rem;
+    margin-bottom: 0px;
+    width: 55%;
+    height: 300px;
+    text-align: justify; /* Justifica el texto dentro del h2 */
+}
+
+  
+  
+  .about-page header p {
+    font-size: 1rem;
+    margin-top: 0px;
+    width: 55%;
+    height: 300px;
+    text-align: justify; /* Justifica el texto dentro del h2 */
+    
+  }
+  
+
+
+  .about-page-header {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+}
+
+.text-content {
+    width: 55%;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.726);
+}
+
+.text-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text-content h2,
+.text-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about-page-header img {
+    max-width: 40%;
+    height: auto;
+    margin-left: auto; /* Mueve la imagen hacia la derecha */
 }
 
 
@@ -230,13 +336,6 @@ body {
 }
 
 
-.contact-page, .services-page {
-    background: url('./Diseño sin título (4).png') center/cover #333;
-    background-attachment: fixed;
-    overflow-y: auto; /* Permite el desplazamiento vertical en ambas páginas */
-    position: relative;
-    color: #fff;
-}
 
 
 .services-page::before {
@@ -339,12 +438,6 @@ body {
 #searchInput {
     color: white;
 }
-
-
-
-
-/* styles_cards.css */
-
 .card {
     border-radius: 15px;
     overflow: hidden;
@@ -449,14 +542,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
 /* Estilos para la sección de contacto */
 body.contact-page {
     position: relative;
@@ -492,7 +577,6 @@ body.contact-page hr {
 
 .contact-info {
     color: #ffffff;
-    text-align: left !important;
     font-size: 1rem;
     margin: 20px auto;
     margin-left: 6%;
@@ -542,31 +626,6 @@ body.contact-page .contact-buttons button:hover {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .map-container iframe {
     width: 30%;
     height: 250px;
@@ -612,23 +671,6 @@ body.contact-page .contact-buttons button:hover {
     color: yellow; /* Cambia el color al hacer hover */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Agrega esto en tu código CSS */
 .whatsapp-floating-button {
     position: fixed;
     bottom: 20px;
@@ -653,9 +695,6 @@ body.contact-page .contact-buttons button:hover {
 .whatsapp-icon:hover {
     background-color: #128c31; /* Cambia el color al hacer hover */
 }
-
-
-
 
 .chat-container {
     display: none;
@@ -710,9 +749,6 @@ body.contact-page .contact-buttons button:hover {
     margin-bottom: 10px;
     color: #000000b9;
 }
-
-
-
 
 /* Agrega esto en tu código CSS */
 @keyframes whatsappBounce {
@@ -774,8 +810,6 @@ body.contact-page .contact-buttons button:hover {
 #descripcionModal13 .modal-body {
     padding: 20px;
 }
-
-
 
 /* Añadir animación cuando no se usa */
 @keyframes pulseAnimation {
@@ -860,40 +894,31 @@ table, th, td {
     text-align: center !important;
 }
 
-
-
-
-
-
 @media screen and (max-width: 767px) {
-    .contact-page .footer {
-        margin-top: 20px; /* Ajusta según sea necesario */
+
+    body {
+        overflow: auto; /* Habilita el scroll en dispositivos móviles */
     }
-}
-
-/* Media Query para dispositivos más pequeños (móviles) */
-@media screen and (max-width: 767px) {
-
 
     .contact-title {
-        font-size: 1.3rem; /* Ajusta el tamaño del título para dispositivos móviles */
+        font-size: 1rem; /* Ajusta el tamaño del título para dispositivos móviles */
         margin-left: 8%;
     }
 
     .contact-description {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         text-align: center; /* Centra el texto para dispositivos móviles */
         margin: 20px;
         margin-top: 40px;
-        max-width: 90%; /* Ajusta el ancho máximo para dispositivos móviles */
+        max-width: 92%; /* Ajusta el ancho máximo para dispositivos móviles */
     }
-
-    .contact-info {
-        font-size: 0.8rem;
-        text-align: center; /* Centra el texto para dispositivos móviles */
-        margin-top: 10px;
-        max-width: 90%; /* Ajusta el ancho máximo para dispositivos móviles */
+    
+    .contact-info p {
+        max-width: 60%; /* Ajusta el ancho máximo para dispositivos móviles */
+        font-size: 14px;
+        margin-top: -10px;
     }
+    
 
     body.contact-page .contact-buttons {
         position: fixed;
@@ -903,51 +928,47 @@ table, th, td {
         transition: top 0.2s; /* Agrega una transición suave para el efecto */
     }
 
-    body.contact-page .contact-buttons.hidden {
-        top: -100px; /* Oculta los botones al moverlos fuera de la pantalla */
-    }
-
     body.contact-page .contact-buttons button {
        margin-right: 8px;
+       background-color: #ffd900;
+       font-weight: bold;
+       margin-top: 4%;
+       width: 120px;
+       height: 46px;
+       border-radius: 30px;
+       font-size: 0.8rem;
+       border: none; /* Agrega esta línea para eliminar el borde */
+   
     }
 
     body.contact-page .social-icons-container {
-        margin: 440px 80px; /* Ajusta los márgenes superior e inferior para dispositivos móviles */
+        margin-right: 16px;
+        margin-top: 170px;      
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;   
     }
 
     body.contact-page .contact-services .social-icon {
-        font-size: 20px; /* Ajusta el tamaño de los íconos para dispositivos móviles */
+        font-size: 16px; /* Ajusta el tamaño de los íconos para dispositivos móviles */
         margin: 0px 0px 0px; /* Ajusta el espaciado entre los íconos para dispositivos móviles */
     }
     
-
-    .map-section {
-        flex-direction: column; /* Cambia la dirección de la fila a columna en dispositivos móviles */
-    }
-
     .map-container {
         width: 80%; /* Ajusta el ancho del mapa */
-        margin: 10px auto; /* Centra el mapa */
+        margin-left: 40px;
         text-align: center; /* Centra el contenido del mapa */
     }
-
+    
     .map-container iframe {
         width: 100%; /* Ocupa el ancho completo en dispositivos móviles */
         height: 100px; /* Ajusta la altura según sea necesario */
         position: static; /* Elimina la posición absoluta para dispositivos móviles */
     }
+    
 
-
-    body.contact-page .contact-buttons button {
-        background-color: #ffd900;
-        font-weight: bold;
-        margin-top: 8%;
-        width: 120px;
-        height: 46px;
-        border-radius: 30px;
-        font-size: 0.8rem;
-        border: none; /* Agrega esta línea para eliminar el borde */
-    }
+     
 
     .whatsapp-floating-button {
         position: fixed;
@@ -966,7 +987,7 @@ table, th, td {
         justify-content: center;
         cursor: pointer;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-        font-size: 1.5rem;
+        font-size: 2.4rem;
         text-align: center;
     }
 
